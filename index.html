@@ -2,26 +2,73 @@
 <html lang="en-US">
 
 <head>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Roboto:ital,wght@0,500&display=swap"
+        rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="author" content="Josh Hyatt">
-    <meta name="description" content="Placeholder for WDD231 assignments">
+    <meta name="description" content="Josh Hyatt's WDD 231 Portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Josh Hyatt | WDD231</title>
+    <title>Home | Josh Hyatt | WDD 231</title>
+    <script src="scripts/copyright.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/date.js" defer></script>
 </head>
 
 <body>
     <header>
-        <h1>Josh Hyatt</h1>
-        <h2>WDD231</h2>
+        <img src="images/profile.webp" alt="Josh Hyatt">
+        <span>Josh Hyatt</span>
     </header>
 
+    <nav>
+        <a href="#" class="active">Home</a>
+        <a href="#">Chamber</a>
+        <a href="#">Final</a>
+        <a href="https://github.com/jnhyatt">GitHub Profile</a>
+        <a href="https://www.linkedin.com/in/joshua-hyatt-6aa3491ab/">LinkedIn</a>
+    </nav>
+
     <main>
-        <p>This is a placeholder for WDD231 assignments.</p>
-        <p>Hello, world!</p>
+        <h1>Home</h1>
+        <div class="fat-grid">
+            <section>
+                <h2>Course Work</h2>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </section>
+            <section>
+                <h2>Utah, USA</h2>
+                <figure>
+                    <img src="images/utah.webp" alt="Arches National Park">
+                    <figcaption>Arches National Park</figcaption>
+                </figure>
+            </section>
+        </div>
+        <section>
+            <h2>Web and Computer Programming Certificates</h2>
+            <div id="filter-buttons">
+                <button id="filter-all">All</button>
+                <button id="filter-cse">CSE</button>
+                <button id="filter-wdd">WDD</button>
+            </div>
+            <hr>
+            <div id="certificates-grid">
+            </div>
+            <p id="total-credits">Credits completed: <span id="credit-count"></span></p>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Josh Hyatt</p>
+        <p>© <span id="current-year"></span> 🚀 WDD 231 🚀 Josh Hyatt</p>
+        <p>Last modified <span id="last-modified"></span></p>
     </footer>
 </body>
 

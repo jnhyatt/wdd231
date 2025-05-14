@@ -1,0 +1,155 @@
+:root {
+    --primary-color: #006a8d;
+    --secondary-color: #00384b;
+    --accent1-color: #d5d5d5;
+    --accent2-color: #88374b;
+}
+
+body {
+    max-width: 840px;
+    margin: 0 auto;
+    font-family: "Poiret One", sans-serif;
+    background-color: var(--accent1-color);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background-color: var(--primary-color);
+    padding: 40px;
+}
+
+header span {
+    color: var(--accent1-color);
+    font-size: 2.5em;
+    margin: 0px;
+}
+
+header img {
+    height: 100px;
+    width: auto;
+    border-radius: 50%;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    flex-grow: 1;
+    text-align: center;
+    padding: 8px;
+    margin: 0px;
+    font-size: 1.4em;
+}
+
+nav a.active {
+    background-color: var(--primary-color);
+}
+
+nav a.active:hover {
+    background-color: var(--primary-color);
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
+}
+
+main {
+    padding: 16px;
+}
+
+.fat-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+section {
+    border-radius: 10px;
+    margin: 16px 0px;
+    overflow: hidden;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+    background-color: white;
+}
+
+section h2 {
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 0.9em;
+}
+
+#filter-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0px, 200px));
+    justify-content: center;
+    gap: 10px;
+    margin: 16px 0px;
+}
+
+#filter-buttons button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#filter-buttons button:hover {
+    background-color: gray;
+}
+
+#filter-buttons button:active {
+    background-color: lightgray;
+}
+
+#total-credits {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+
+.certificate.completed {
+    background-color: var(--accent2-color);
+}
+
+.certificate {
+    background-color: var(--accent1-color);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    color: var(--accent1-color);
+}
