@@ -1,0 +1,43 @@
+body {
+    max-width: 1280px;
+    margin: 0 auto;
+    font-family: "Lilita One", sans-serif;
+    color: #00384b;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 4px;
+    /* drop shadow */
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+}
+
+#cards section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ccd;
+    border: 1px solid #88b;
+    padding: 16px;
+}
+
+#cards section h2 {
+    margin: 4px;
+}
+
+#cards section p {
+    margin: 4px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding: 20px;
+    text-align: center;
+}
