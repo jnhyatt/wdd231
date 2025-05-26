@@ -6,10 +6,19 @@
 }
 
 body {
-    max-width: 840px;
+    max-width: 1000px;
     margin: 0 auto;
-    font-family: "Lilita One", sans-serif;
+    font-family: "Source Serif 4", serif;
     background-color: var(--accent1-color);
+}
+
+h1 h2 h3 h4 h5 h6 {
+    font-family: "Playfair Display", serif;
+}
+
+.hero {
+    width: 100%;
+    height: auto;
 }
 
 header {
@@ -26,14 +35,14 @@ header span {
     margin: 0px;
 }
 
-nav {
+.page-nav {
     display: grid;
     grid-template-rows: 0fr;
     background-color: var(--secondary-color);
     transition: grid-template-rows 0.3s ease-in-out;
 }
 
-nav.open {
+.page-nav.open {
     grid-template-rows: 1fr;
 }
 
@@ -87,30 +96,83 @@ nav ul li a:active {
     background-color: #fff7;
 }
 
-main {
-    padding: 16px;
-}
-
 .fat-grid {
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
-section {
+article {
     border-radius: 10px;
-    margin: 16px 0px;
+    margin: 16px 0;
     overflow: hidden;
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
     background-color: white;
 }
 
-section h2 {
+article h2 {
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+}
+
+.member-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    margin: 16px 0px;
+    padding: 0 0 16px 0;
+    overflow: hidden;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+    background-color: white;
+}
+
+.member-card h2 {
     background-color: var(--secondary-color);
     color: var(--accent1-color);
     padding: 10px;
     margin: 0px;
     text-align: center;
+    width: 100%;
+}
+
+#member-grid {
+    display: grid;
+    padding: 0;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 16px;
+}
+
+#member-list {
+    padding: 0;
+}
+
+.member-list-item {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+    justify-content: stretch;
+    background-color: white;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 8px;
+    padding: 0 16px;
+}
+
+.member-list-item img {
+    flex: 0 0 80px;
+}
+
+.member-list-item h2 {
+    flex: 1;
+}
+
+.member-list-item div {
+    flex: 1;
 }
 
 figure img {
@@ -171,6 +233,9 @@ figcaption {
 }
 
 footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: var(--primary-color);
     padding: 4px;
     text-align: center;
@@ -178,4 +243,16 @@ footer {
 
 footer p {
     color: var(--accent1-color);
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links a img {
+    width: 3rem;
+    height: auto;
 }

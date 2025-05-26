@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Sunrise Bakery",
+        "address": "123 Main St, Springfield, IL 62701",
+        "phone": "217-555-1234",
+        "website": "https://www.sunrisebakery.com",
+        "logo": "images/bakery.webp",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Tech Solutions Inc.",
+        "address": "456 Technology Dr, Springfield, IL 62702",
+        "phone": "217-555-5678",
+        "website": "https://www.techsolutions.com",
+        "logo": "images/tech.webp",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Green Thumb Nursery",
+        "address": "789 Garden Ave, Springfield, IL 62703",
+        "phone": "217-555-2468",
+        "website": "https://www.greenthumbnursery.com",
+        "logo": "images/nursery.webp",
+        "membershipLevel": 1
+    },
+    {
+        "name": "Book Haven",
+        "address": "654 Reading Rd, Springfield, IL 62705",
+        "phone": "217-555-9753",
+        "website": "https://www.bookhaven.com",
+        "logo": "images/book.webp",
+        "membershipLevel": 1
+    },
+    {
+        "name": "Auto Care Center",
+        "address": "987 Service Ln, Springfield, IL 62706",
+        "phone": "217-555-8642",
+        "website": "https://www.autocarecenter.com",
+        "logo": "images/car.webp",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Elegant Events",
+        "address": "159 Celebration Ct, Springfield, IL 62707",
+        "phone": "217-555-7531",
+        "website": "https://www.elegantevents.com",
+        "logo": "images/events.webp",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Pet Paradise",
+        "address": "753 Animal St, Springfield, IL 62708",
+        "phone": "217-555-4826",
+        "website": "https://www.petparadise.com",
+        "logo": "images/pet.webp",
+        "membershipLevel": 1
+    }
+]

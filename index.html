@@ -2,13 +2,12 @@
 <html lang="en-US">
 
 <head>
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Roboto:ital,wght@0,500&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="favicon.ico">
     <meta charset="UTF-8">
     <meta name="author" content="Josh Hyatt">
@@ -22,20 +21,24 @@
     <script src="scripts/copyright.js" defer></script>
     <script src="scripts/course.js" defer></script>
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
 </head>
 
 <body>
     <header>
-        <img src="images/profile.webp" alt="Josh Hyatt">
+        <button id="menu-button"></button>
+        <img src="images/logo.webp" alt="Josh Hyatt" width="40" height="40">
         <span>Josh Hyatt</span>
     </header>
 
     <nav>
-        <a href="#" class="active">Home</a>
-        <a href="#">Chamber</a>
-        <a href="#">Final</a>
-        <a href="https://github.com/jnhyatt">GitHub Profile</a>
-        <a href="https://www.linkedin.com/in/joshua-hyatt-6aa3491ab/">LinkedIn</a>
+        <ul id="menu-links">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+            <li><a href="https://github.com/jnhyatt">GitHub Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/joshua-hyatt-6aa3491ab/">LinkedIn</a></li>
+        </ul>
     </nav>
 
     <main>
