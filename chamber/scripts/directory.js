@@ -1,3 +1,5 @@
+import { fillMemberTemplate, loadMembers } from './members.mjs';
+
 const toggleMemberView = document.getElementById('toggle-member-view');
 const memberList = document.querySelector('#member-list');
 const memberGrid = document.querySelector('#member-grid');
@@ -22,11 +24,6 @@ function refreshMemberView() {
     }
 }
 
-async function loadMembers() {
-    const response = await fetch('data/members.json');
-    return await response.json();
-}
-
 loadMembers().then(members => {
     console.log('Members loaded:', members);
     members.forEach(member => {
@@ -38,19 +35,3 @@ loadMembers().then(members => {
         memberGrid.appendChild(memberCard);
     });
 });
-
-function fillMemberTemplate(member, template) {
-    template.querySelector('.name').textContent = member.name;
-    template.querySelector('.logo').src = member.logo;
-    template.querySelector('.logo').alt = `${member.name} logo`;
-    const address = template.querySelector('.address');
-    if (address) {
-        address.textContent = member.address;
-    }
-    const phone = template.querySelector('.phone');
-    if (phone) {
-        phone.textContent = member.phone;
-    }
-    template.querySelector('.site-link').href = member.website;
-    template.querySelector('.site-link').textContent = "Visit ➡";
-}
