@@ -1,0 +1,103 @@
+form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 20px;
+    display: grid;
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+form legend {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.form-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1rem;
+}
+
+.membership-levels {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 0;
+}
+
+.membership-levels li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.membership-levels button {
+    padding: 0.4rem;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.membership-levels button:hover {
+    background-color: var(--secondary-color);
+}
+
+.membership-levels img {
+    width: 128px;
+    height: 128px;
+    animation: pulse 2s infinite;
+}
+
+dialog {
+    max-width: 600px;
+    border-color: var(--accent2-color);
+    border-radius: 20px;
+}
+
+dialog div {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.close {
+    width: 32px;
+    height: 32px;
+    margin: 9px;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.08);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

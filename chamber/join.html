@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/join-form.css">
+    <link rel="icon" href="favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="author" content="Josh Hyatt">
+    <meta name="description" content="Membership application page for the Illyria Chamber of Commerce">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Join | Illyria Chamber of Commerce">
+    <meta property="og:description" content="Membership application page for the Illyria Chamber of Commerce">
+    <meta property="og:image" content="images/logo.webp">
+    <meta property="og:url" content="https://jnhyatt.github.io/wdd231/chamber.html">
+    <title>Join | Illyria Chamber of Commerce</title>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/join-form.js" defer></script>
+    <script src="scripts/nav.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.webp" alt="Illyria Chamber of Commerce" width="40" height="40">
+        <span>Illyria Chamber of Commerce</span>
+        <button id="open-menu" class="menu-button"></button>
+    </header>
+
+    <nav class="page-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html" class="active">Join</a></li>
+            <li><a href="#">Discover</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Join</h1>
+
+        <div class="form-columns">
+            <section>
+                <form id="membership-form" action="thankyou.html" method="get" autocomplete="on">
+                    <fieldset class="form-grid">
+                        <legend>Membership Application</legend>
+                        <label for="first-name">First Name:</label>
+                        <input type="text" id="first-name" name="first-name" title="Applicant's first name"
+                            autocomplete="given-name" required>
+
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" id="last-name" name="last-name" title="Applicant's last name"
+                            autocomplete="family-name" required>
+
+                        <label for="title">Organizational Title:</label>
+                        <input type="text" id="title" name="title" title="Applicant's title within the organization"
+                            autocomplete="organization-title" pattern="[A-Za-z\\s\\-]{7,}" required>
+
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" title="Applicant's email address"
+                            autocomplete="email" placeholder="name@example.com" required>
+
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" title="Applicant's phone number" autocomplete="tel"
+                            required>
+
+                        <label for="organization">Organization Name:</label>
+                        <input type="text" id="organization" name="organization" title="Organization name"
+                            autocomplete="organization" required>
+
+                        <label for="membership-level">Membership Level:</label>
+                        <select id="membership-level" name="membership-level" title="Select a membership level"
+                            required>
+                            <option value="" disabled selected>Select a membership level</option>
+                            <option value="non-profit">Non-profit</option>
+                            <option value="bronze">Bronze</option>
+                            <option value="silver">Silver</option>
+                            <option value="gold">Gold</option>
+                        </select>
+
+                        <label for="description">Organization Description:</label>
+                        <textarea id="description" name="description" title="Briefly describe your organization"
+                            rows="4" placeholder="Describe your organization..."></textarea>
+
+                        <input type="hidden" id="timestamp" name="timestamp" value="">
+                    </fieldset>
+
+                    <button type="submit">Apply for Membership</button>
+                </form>
+            </section>
+
+            <section>
+                <h2>Membership Levels</h2>
+                <ul class="membership-levels">
+                    <li>
+                        <h3>Non-profit</h3>
+                        <img src="images/non-profit.webp" alt="Non-profit Membership" width="50" height="50">
+                        <button id="non-profit-learn-more" class="modal-link" data-target="membership-non-profit">Learn
+                            More</button>
+                    </li>
+                    <li>
+                        <h3>Bronze</h3>
+                        <img src="images/bronze.webp" alt="Bronze Membership" width="50" height="50">
+                        <button id="bronze-learn-more" class="modal-link" data-target="membership-bronze">Learn
+                            More</button>
+                    </li>
+                    <li>
+                        <h3>Silver</h3>
+                        <img src="images/silver.webp" alt="Silver Membership" width="50" height="50">
+                        <button id="silver-learn-more" class="modal-link" data-target="membership-silver">Learn
+                            More</button>
+                    </li>
+                    <li>
+                        <h3>Gold</h3>
+                        <img src="images/gold.webp" alt="Gold Membership" width="50" height="50">
+                        <button id="gold-learn-more" class="modal-link" data-target="membership-gold">Learn
+                            More</button>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <dialog id="membership-non-profit">
+        <div>
+            <img src="images/non-profit.webp" alt="Non-profit Membership" width="50" height="50">
+            <h3>Non-profit Membership</h3>
+            <button class="close">✖</button>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet distinctio, nam nemo cum sit mollitia.
+            Accusantium ex esse alias fugit aliquam quibusdam, voluptatum deleniti nihil consectetur quos officiis neque
+            eum modi ipsa quo unde temporibus dolores impedit, autem aliquid vitae.</p>
+    </dialog>
+
+    <dialog id="membership-bronze">
+        <div>
+            <img src="images/bronze.webp" alt="Bronze Membership" width="50" height="50">
+            <h3>Bronze Membership</h3>
+            <button class="close">✖</button>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet distinctio, nam nemo cum sit mollitia.
+            Accusantium ex esse alias fugit aliquam quibusdam, voluptatum deleniti nihil consectetur quos officiis neque
+            eum modi ipsa quo unde temporibus dolores impedit, autem aliquid vitae.</p>
+    </dialog>
+
+    <dialog id="membership-silver">
+        <div>
+            <img src="images/silver.webp" alt="Silver Membership" width="50" height="50">
+            <h3>Silver Membership</h3>
+            <button class="close">✖</button>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet distinctio, nam nemo cum sit mollitia.
+            Accusantium ex esse alias fugit aliquam quibusdam, voluptatum deleniti nihil consectetur quos officiis neque
+            eum modi ipsa quo unde temporibus dolores impedit, autem aliquid vitae.</p>
+    </dialog>
+
+    <dialog id="membership-gold">
+        <div>
+            <img src="images/gold.webp" alt="Gold Membership" width="50" height="50">
+            <h3>Gold Membership</h3>
+            <button class="close">✖</button>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet distinctio, nam nemo cum sit mollitia.
+            Accusantium ex esse alias fugit aliquam quibusdam, voluptatum deleniti nihil consectetur quos officiis neque
+            eum modi ipsa quo unde temporibus dolores impedit, autem aliquid vitae.</p>
+    </dialog>
+
+    <footer>
+        <div>
+            <h5>Illyria Chamber of Commerce</h5>
+            <p>123 Main Street, Illyria</p>
+            <p>info@illyriachamber.com</p>
+            <p>(123) 456-7890</p>
+        </div>
+        <nav class="social-links">
+            <a href="https://discord.com"><img src="images/discord.svg" alt="Our Discord server"></a>
+            <a href="https://mastodon.social"><img src="images/mastodon.svg" alt="Our Mastodon feed"></a>
+            <a href="https://www.reddit.com"><img src="images/reddit.svg" alt="Our Subreddit"></a>
+        </nav>
+        <div>
+            <p>WDD 231</p>
+            <p>Josh Hyatt</p>
+            <p>© 2025 Illyria Chamber of Commerce</p>
+            <p>Last Updated: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

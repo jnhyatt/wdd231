@@ -83,6 +83,7 @@ const filterCSE = document.querySelector("#filter-cse");
 const filterWDD = document.querySelector("#filter-wdd");
 const courseList = document.querySelector("#certificates-grid");
 const creditCount = document.querySelector("#credit-count");
+const courseDetails = document.querySelector("#course-details");
 
 filterAll.addEventListener("click", () => {
     courseList.innerHTML = "";
@@ -103,7 +104,7 @@ updateCourseList(courses, _ => true);
 
 function createCourseCard(course) {
     const courseCard = document.createElement("div");
-    courseCard.classList.add("certificate");
+    courseCard.classList.add("certificate-card");
     if (course.completed) {
         courseCard.classList.add("completed");
     }
@@ -112,6 +113,11 @@ function createCourseCard(course) {
     const checkmark = course.completed ? "✔️" : "";
     courseName.textContent = `${course.subject} ${course.number} ${checkmark}`;
     courseCard.appendChild(courseName);
+
+    courseCard.addEventListener("click", () => {
+        fillModal(course);
+        courseDetails.showModal();
+    });
 
     return courseCard;
 }
@@ -124,4 +130,15 @@ function updateCourseList(courses, courseFilter) {
     creditCount.textContent = filteredCourses
         .filter(course => course.completed)
         .reduce((total, course) => total + course.credits, 0);
+}
+
+function fillModal(course) {
+    courseDetails.querySelector(".close").addEventListener("click", () => {
+        courseDetails.close();
+    });
+    courseDetails.querySelector(".title").textContent = `${course.subject} ${course.number} - ${course.title}`;
+    courseDetails.querySelector(".description").textContent = course.description;
+    courseDetails.querySelector(".credits").textContent = course.credits;
+    courseDetails.querySelector(".certificate").textContent = course.certificate;
+    courseDetails.querySelector(".technologies").textContent = course.technology.join(", ");
 }
