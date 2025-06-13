@@ -1,0 +1,77 @@
+:root {
+    --primary-color: #1E2A38;
+    --secondary-color: #7C8EA1;
+    --accent1-color: #C46009;
+    --accent2-color: #FACE3C;
+}
+
+body {
+    max-width: 840px;
+    margin: 0 auto;
+    background-color: var(--secondary-color);
+    font-family: 'Open Sans', sans-serif;
+    color: #2D2D2D;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+}
+
+header {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    padding: 0;
+}
+
+header h1 {
+    margin-top: 0;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    padding: 0.5rem 0;
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    background-color: #0004;
+}
+
+nav ul li a:hover {
+    background-color: #fff4;
+}
+
+.hero {
+    width: 100%;
+    padding: 0;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+}
+
+footer p {
+    text-align: center;
+}
