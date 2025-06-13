@@ -1,0 +1,22 @@
+section p,
+section ul,
+section h3 {
+    padding: 0 2rem;
+}
+
+section h3 {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 0.5rem auto;
+}
+
+code {
+    display: block;
+    padding: 1rem;
+    white-space: pre-wrap;
+    font-family: monospace;
+    overflow-x: auto;
+}
