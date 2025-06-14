@@ -10,18 +10,19 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="favicon.ico?cache=false">
+
     <meta charset="UTF-8">
     <meta name="author" content="Josh Hyatt">
-    <meta name="description" content="Directory page for the Illyria Chamber of Commerce">
+    <meta name="description" content="Discover page for the Illyria Chamber of Commerce">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Directory | Illyria Chamber of Commerce">
-    <meta property="og:description" content="Directory page for the Illyria Chamber of Commerce">
+    <meta property="og:title" content="Discover | Illyria Chamber of Commerce">
+    <meta property="og:description" content="Discover page for the Illyria Chamber of Commerce">
     <meta property="og:image" content="images/logo.webp">
-    <meta property="og:url" content="https://jnhyatt.github.io/wdd231/chamber.html">
-    <title>Directory | Illyria Chamber of Commerce</title>
-    <script type="module" src="scripts/members.mjs"></script>
+    <meta property="og:url" content="https://jnhyatt.github.io/wdd231/index.html">
+
+    <title>Discover | Illyria Chamber of Commerce</title>
+
     <script src="scripts/date.js" defer></script>
-    <script type="module" src="scripts/directory.js"></script>
     <script src="scripts/nav.js" defer></script>
 </head>
 
@@ -35,19 +36,14 @@
     <nav class="page-nav">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="directory.html" class="active">Directory</a></li>
+            <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
-            <li><a href="discover.html">Discover</a></li>
+            <li><a href="discover.html" class="active">Discover</a></li>
         </ul>
     </nav>
 
     <main>
-        <h1>Directory</h1>
-        <section>
-            <button id="toggle-member-view"></button>
-            <ul id="member-list"></ul>
-            <ul id="member-grid"></ul>
-        </section>
+        <h1>Discover</h1>
     </main>
 
     <footer>
@@ -70,26 +66,16 @@
         </div>
     </footer>
 
-    <template id="member-card">
-        <div class="member-card">
-            <h2 class="name"></h2>
-            <img class="logo" src="" alt="Member Logo" width="100" height="100">
-            <p class="address"></p>
-            <p class="phone"></p>
-            <a class="site-link" href="">Visit Website</a>
-        </div>
-    </template>
-
-    <template id="member-list-item">
-        <div class="member-list-item">
-            <img class="logo" src="" alt="Member Logo" width="64" height="64">
-            <h2 class="name"></h2>
-            <div>
-                <p class="address"></p>
-                <p class="phone"></p>
-            </div>
-            <a class="site-link" href="">Visit Website</a>
-        </div>
+    <template id="poi-card-template">
+        <article>
+            <h2></h2>
+            <figure>
+                <img>
+            </figure>
+            <address></address>
+            <p></p>
+            <button>Learn More</button>
+        </article>
     </template>
 
 </body>
