@@ -3,6 +3,7 @@
     --secondary-color: #7C8EA1;
     --accent1-color: #C46009;
     --accent2-color: #FACE3C;
+    --text-color: #2D2D2D;
 }
 
 body {
@@ -10,7 +11,7 @@ body {
     margin: 0 auto;
     background-color: var(--secondary-color);
     font-family: 'Open Sans', sans-serif;
-    color: #2D2D2D;
+    color: var(--text-color);
 }
 
 h1,
@@ -74,4 +75,47 @@ footer {
 
 footer p {
     text-align: center;
+}
+
+article {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.card-even {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.card-odd {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    direction: rtl;
+}
+
+.card-odd * {
+    direction: ltr;
+}
+
+article img {
+    justify-self: center;
+}
+
+.button {
+    padding: 0.5rem;
+    background-color: var(--accent1-color);
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: 0.25rem;
+    transition: background-color 0.2s ease;
+}
+
+.button:hover {
+    background-color: var(--accent2-color);
 }

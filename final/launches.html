@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+
+    <meta charset="UTF-8">
+    <meta name="author" content="Josh Hyatt">
+    <meta name="description" content="Launch tracker page for Rocket Tracker">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Launches | Rocket Tracker">
+    <meta property="og:description" content="Launch tracker page for Rocket Tracker">
+    <meta property="og:image" content="images/profile.webp">
+    <meta property="og:url" content="https://jnhyatt.github.io/wdd231/final">
+    <title>Launches | Rocket Tracker</title>
+    <script type="module" src="scripts/launches.js"></script>
+    <script type="module" src="scripts/copyright.js"></script>
+    <script type="module" src="scripts/date.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Rocket Tracker</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" class="active">Launches</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="subscribe.html">Subscribe</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Launches</h2>
+        <ul id="launch-list"></ul>
+    </main>
+
+    <footer>
+        <p>© <span id="current-year"></span> 🚀 Rocket Tracker 🚀 Josh Hyatt</p>
+        <p>Last modified <span id="last-modified"></span></p>
+    </footer>
+
+    <template id="launch-card">
+        <li>
+            <article>
+                <h3></h3>
+                <h4></h4>
+                <div class="card-odd">
+                    <img loading="lazy">
+                    <div>
+                        <p class="provider"></p>
+                        <p class="countdown"></p>
+                        <p class="location"></p>
+                    </div>
+                </div>
+            </article>
+        </li>
+    </template>
+</body>
+
+</html>
