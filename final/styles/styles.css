@@ -21,30 +21,65 @@ h4,
 h5,
 h6 {
     font-family: 'Orbitron', sans-serif;
-    text-align: center;
 }
 
 header {
+    display: flex;
     color: var(--secondary-color);
     background-color: var(--primary-color);
     padding: 0;
+    align-items: center;
+    justify-content: space-between;
 }
 
 header h1 {
-    margin-top: 0;
-    padding: 1rem 0;
+    flex: 1;
+    text-align: center;
+}
+
+nav {
+    display: grid;
+    background-color: var(--primary-color);
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease-in-out;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+}
+
+.menu-button {
+    padding: 1rem;
+    background: none;
+    border: none;
+    color: var(--secondary-color);
+    font-size: 2em;
+}
+
+.menu-button::before {
+    content: "☰";
+}
+
+.menu-button.open::before {
+    content: "✖";
+}
+
+.menu-button:hover {
+    background-color: #fff2;
+}
+
+.menu-button:active {
+    background-color: #fff7;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    justify-content: space-evenly;
+    overflow: hidden;
 }
 
 nav ul li {
-    flex: 1;
     text-align: center;
 }
 
@@ -60,6 +95,10 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: #fff4;
+}
+
+nav ul li a.active {
+    background-color: #fff1;
 }
 
 .hero {
@@ -118,4 +157,31 @@ article img {
 
 .button:hover {
     background-color: var(--accent2-color);
+}
+
+.loading {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader {
+    border: 8px solid var(--secondary-color);
+    border-top: 8px solid var(--accent1-color);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }

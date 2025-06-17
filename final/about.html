@@ -9,6 +9,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="favicon.ico">
 
     <meta charset="UTF-8">
@@ -22,25 +23,35 @@
     <title>About | Rocket Tracker</title>
     <script type="module" src="scripts/copyright.js"></script>
     <script type="module" src="scripts/date.js"></script>
+    <script type="module" src="scripts/navigation.js"></script>
+    <script type="module" src="scripts/about.js"></script>
 </head>
 
 <body>
     <header>
+        <button class="menu-button"></button>
         <h1>Rocket Tracker</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="launches.html">Launches</a></li>
-                <li><a href="#" class="active">About</a></li>
-                <li><a href="subscribe.html">Subscribe</a></li>
-            </ul>
-        </nav>
     </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="launches.html">Launches</a></li>
+            <li><a href="#" class="active">About</a></li>
+            <li><a href="subscribe.html">Subscribe</a></li>
+        </ul>
+    </nav>
 
     <main>
         <h2>About</h2>
         <p>TODO</p>
     </main>
+
+    <dialog class="info-text">
+        <button class="close">✖</button>
+        <h2 class="topic"></h2>
+        <p class="body"></p>
+    </dialog>
 
     <footer>
         <p>© <span id="current-year"></span> 🚀 Rocket Tracker 🚀 Josh Hyatt</p>

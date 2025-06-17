@@ -1,49 +1,49 @@
 [
     {
         "title": "Sunveil Alley",
-        "filename": "discover/alley.webp",
+        "filename": "images/discover/alley.webp",
         "address": "14 Artisan Row, Old Illyria",
         "description": "A narrow, sun-dappled alley lined with cafés, artisan boutiques, and flower boxes spilling into the street. A perfect blend of charm and daily life."
     },
     {
         "title": "Temple of Highwinds",
-        "filename": "discover/architecture.webp",
+        "filename": "images/discover/architecture.webp",
         "address": "1 Acropolis Way, Illyria Heights",
         "description": "An ancient marble temple perched on the cliffs above the city. Dedicated to the wind gods, it offers sweeping views and centuries of myth."
     },
     {
         "title": "Via Verde Promenade",
-        "filename": "discover/hillside.webp",
+        "filename": "images/discover/hillside.webp",
         "address": "200 Greenway Blvd, Central Illyria",
         "description": "A peaceful pedestrian walkway along the hillside, flanked by cypress trees and elegant railings. Popular for morning strolls and festivals."
     },
     {
         "title": "Arborview Park",
-        "filename": "discover/park.webp",
+        "filename": "images/discover/park.webp",
         "address": "85 Canopy Lane, East Illyria",
         "description": "A vibrant public park with wide lawns, playgrounds, and a music pavilion. Known for its weekend farmers’ markets and open-air performances."
     },
     {
         "title": "San Aurelio Lookout",
-        "filename": "discover/river.webp",
+        "filename": "images/discover/river.webp",
         "address": "3 Cliffside Rd, South Illyria",
         "description": "A scenic overlook with a panoramic view of the Illyrian coast. Home to an old bell tower and a favorite spot for wedding photos."
     },
     {
         "title": "Red Tile Overlook",
-        "filename": "discover/rooftops.webp",
+        "filename": "images/discover/rooftops.webp",
         "address": "18 Terrace Hill, Illyria Old Town",
         "description": "A rooftop vantage point with a stunning view of Illyria’s famous terracotta skyline. Best visited at golden hour."
     },
     {
         "title": "Garden of the Moonmask",
-        "filename": "discover/statue.webp",
+        "filename": "images/discover/statue.webp",
         "address": "77 Laurel Walk, North Illyria",
         "description": "A mysterious garden surrounding a weathered statue rumored to be a forgotten deity. Local legend says wishes whispered here may come true."
     },
     {
         "title": "Hall of Echoes",
-        "filename": "discover/statues.webp",
+        "filename": "images/discover/statues.webp",
         "address": "9 Marble Ring, Citadel District",
         "description": "Ruins of an ancient forum known for its uncanny acoustics. Speak aloud, and your voice may return in unexpected ways."
     }

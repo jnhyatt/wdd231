@@ -9,6 +9,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="favicon.ico">
 
     <meta charset="UTF-8">
@@ -23,23 +24,30 @@
     <script type="module" src="scripts/launches.js"></script>
     <script type="module" src="scripts/copyright.js"></script>
     <script type="module" src="scripts/date.js"></script>
+    <script type="module" src="scripts/navigation.js"></script>
 </head>
 
 <body>
     <header>
+        <button class="menu-button"></button>
         <h1>Rocket Tracker</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#" class="active">Launches</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="subscribe.html">Subscribe</a></li>
-            </ul>
-        </nav>
     </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#" class="active">Launches</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="subscribe.html">Subscribe</a></li>
+        </ul>
+    </nav>
 
     <main>
         <h2>Launches</h2>
+        <div class="loading">
+            <div class="loader"></div>
+            <p>Loading launches...</p>
+        </div>
         <ul id="launch-list"></ul>
     </main>
 
