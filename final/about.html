@@ -44,13 +44,60 @@
 
     <main>
         <h2>About</h2>
-        <p>TODO</p>
+        <article>
+            <h3>What is everyone putting in space?</h3>
+            <p>Hundreds of rockets fly to orbit every year, but why? Do we really have that much stuff to send up?
+                Thousands of <a href="#" data-modal="definition-satellite">satellites</a> support everything from GPS
+                and internet access to climate research, disaster response, and military surveillance. Space is also
+                home to telescopes, science experiments, and even art. Some missions are commercial, some are
+                governmental, and some are academic — but all of them rely on space as a unique platform where gravity
+                and atmosphere don’t get in the way.</p>
+        </article>
+        <article>
+            <h3>What happens after launch?</h3>
+            <p>Does launching satellites leave space junk in orbit forever? When a satellite reaches the end of
+                its life, its orbit is slowed until it falls back to earth, safely burning up in the atmosphere.
+                Satellites in higher orbits are placed in <a href="#" data-modal="definition-graveyard-orbit">graveyard
+                    orbits</a>.
+            </p>
+        </article>
+        <article>
+            <h3>How do rockets work?</h3>
+            <p>Newton's third law says that for something to move forward, it has to push something else backward. In
+                the vacuum of space, there's no ground or air to push against, so rockets have to carry their own
+                reaction mass. Carrying an entire rocket to orbit would require a massive amount of fuel, so rockets are
+                designed with multiple <a href="#" data-modal="definition-stage">stages</a>, which can be jettisoned
+                when they are out of fuel to reduce weight.</p>
+        </article>
+        <article>
+            <h3>The people of spaceflight</h3>
+            <p>Every launch depends on thousands of people — from design engineers and technicians to safety officers
+                and mission planners. There are specialists who work on countdown procedures, propellant loading,
+                weather monitoring, and flight software. Once the rocket lifts off, tracking teams take over to monitor
+                the mission from ground stations around the world. No one works alone, and every person plays a part in
+                getting the payload safely to orbit.</p>
+        </article>
     </main>
 
-    <dialog class="info-text">
+    <dialog id="definition-satellite">
         <button class="close">✖</button>
-        <h2 class="topic"></h2>
-        <p class="body"></p>
+        <h2>Satellite</h2>
+        <p>An object in orbit around a planet or other celestial body. Artificial satellites are used for various
+            purposes, including communication, weather monitoring, and scientific research.</p>
+    </dialog>
+
+    <dialog id="definition-graveyard-orbit">
+        <button class="close">✖</button>
+        <h2>Graveyard Orbit</h2>
+        <p>A high, stable orbit used to safely store retired satellites, keeping them out of busy operational zones like
+            geostationary orbit.</p>
+    </dialog>
+
+    <dialog id="definition-stage">
+        <button class="close">✖</button>
+        <h2>Stage</h2>
+        <p>A section of a rocket with its own engines and fuel. Most rockets use multiple stages, discarding each one
+            when it runs out of fuel to reduce weight.</p>
     </dialog>
 
     <footer>
